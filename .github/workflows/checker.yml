@@ -2,7 +2,7 @@ name: Appointment Checker
 
 on:
   schedule:
-    - cron: '*/2 * * * *'  # Her 30 dakikada bir çalışır
+    - cron: '*/5 * * * *'  # Her 30 dakikada bir çalışır
   workflow_dispatch:        # Elle tetiklemek için
 
 jobs:
