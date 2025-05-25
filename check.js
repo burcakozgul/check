@@ -1,3 +1,8 @@
+const axios = require('axios');
+
+const botToken = process.env.BOT_TOKEN;
+const chatId = process.env.CHAT_ID;
+
 async function checkAppointments() {
     try {
         const response = await axios.post(
