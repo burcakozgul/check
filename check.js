@@ -6,7 +6,7 @@ const chatId = process.env.CHAT_ID;
 async function checkAppointments() {
     try {
         const response = await axios.post(
-            'https://appointment.as-visa.com/AnBir/Macaristan/TarihGetir',
+            'https://appointment.as-visa.com/Macaristan/TarihGetir',
             new URLSearchParams({
                 tabId: 'Macaristan Bireysel Randevu (C)',
                 countryId: 'TÜRKİYE'
