@@ -32,7 +32,7 @@ async function checkAppointments() {
             }
         );
 
-        //if (response.data && Object.keys(response.data).length > 0) {
+        if (response.data && Object.keys(response.data).length > 0) {
             const message = `🎉 Randevu bulundu! ${JSON.stringify(response.data)}`;
             await axios.get(`https://api.telegram.org/bot${botToken}/sendMessage`, {
                 params: {
@@ -41,9 +41,9 @@ async function checkAppointments() {
                 }
             });
             console.log('Telegram mesajı gönderildi.');
-        //} else {
+        } else {
             console.log('Şu anda randevu yok.');
-        //}
+        }
 
     } catch (error) {
         console.error('Hata:', error.message);
